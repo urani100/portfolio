@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Your Name</title>
+  <title>M Leconte</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 <body>
 
@@ -14,29 +15,66 @@
     <div class="container">
       <a href="index.html" id="logo">Marsha Leconte</a>
       <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul> 
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portf">Portfolio</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+          <li><a href="#">CV</a></li>
+          <li><a href="contact.html"><img src="assets/images/gitx.png" id='navPic'></a></li>
+          <li><a href="contact.html"><img src="assets/images/linkedinx.png" id='navPic'></a></li>  
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="main-section">
+  <a name="about"></a> 
+  <main class="container">  
+    <section class="main-section-about">
       <h1>About Me</h1>
+      <img src="assets/images/MLX.jpg" class="auth-image" alt="aboutMe">
+      <p>I am a Full-Stack Developer with a training in data analysis. I hold a Master’s Degree in Computer Science from New York University Tandon School of Engineering. I use HTML, CSS, JavaScript JavaScript, jQuery and Node.js to create practical, functional, and beautiful websites. Problem-solving  is one of my strengths. Details matter to me very much.
+        I am a team player and I communicate effectively with both, technical and business team members. I take pride in developing projects and enjoy the final product.
+      </p>
+       
+        
+      </section>
+    <!------------------------------------------------------------------->
+    <a name="portf"></a>
+    <section class="main-section-portfolio">
+       
+        <h1>Portfolio</h1>
 
-      <img src="assets/images/aboutMe.png" class="auth-image" alt="aboutMe">
-
-      <p>Marshmallow jelly souffl&eacute; pastry biscuit gummi bears tootsie roll tootsie roll gingerbread. Cotton candy muffin gingerbread fruitcake. Sweet roll souffl&eacute; topping wafer croissant oat cake gummi&nbsp;bears.</p>
-
-      <p>Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon cotton candy cake pudding.</p>
-
+        <div class="work">
+          <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
+  
+          <h3>Word Guess</h3>
+        </div>
+        <div class="work">
+          <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
+  
+          <h3>RPG Game</h3>
+        </div>
+        <div class="work">
+          <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+  
+          <h3>Trivia Game</h3>
+        </div>
+        <div class="work">
+          <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Info Widget">
+  
+          <h3>Info Widget</h3>
+        </div>
     </section>
+    
+
+    <!------------------------------------------------------------------->
+    <!-- <a name="contact"></a>
+    <section class="main-section-contact">
+         <p>Stay in Touch: Phone: 347.622.1720 | email: marsha.d.leconte@gmail.com</p>
+    </section> -->
 
   </main>
-  <div class="push"></div>
+ 
 </div>
 
   <!-- <footer>
@@ -44,5 +82,48 @@
       &copy; Copyright
     </div>
   </footer> -->
+
+
+  <!------------------------------------->
+  <script>
+    // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                  return false;
+                } else {
+                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                  $target.focus(); // Set focus again
+                };
+              });
+            }
+          }
+        });
+        
+  
+  </script>
 </body>
 </html>
