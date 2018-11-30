@@ -6,6 +6,7 @@
   <title>M Leconte</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  
 </head>
 <body>
 
@@ -14,116 +15,89 @@
   <header id="masthead">
     <div class="container">
       <a href="index.html" id="logo">Marsha Leconte</a>
+     
       <nav>
         <ul> 
+        <scroll-container>
           <li><a href="#about">About Me</a></li>
-          <li><a href="#portf">Portfolio</a></li>
-          <!-- <li><a href="#contact">Contact</a></li> -->
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </scroll-container>
+
           <li><a href="#">CV</a></li>
-          <li><a href="contact.html"><img src="assets/images/gitx.png" id='navPic'></a></li>
-          <li><a href="contact.html"><img src="assets/images/linkedinx.png" id='navPic'></a></li>  
+          <li><a href="https://github.com/urani100?tab=repositories"><img src="assets/images/git.png" id='navPic'></a></li>
+          <li><a href="https://www.linkedin.com/in/marshaleconte/"><img src="assets/images/linkedin.png" id='navPic'></a></li>  
         </ul>
       </nav>
     </div>
   </header>
 
-  <a name="about"></a> 
+  <a id="about"></a> 
   <main class="container">  
-    <section class="main-section-about">
+    <div class="main-section-about">
       <h1>About Me</h1>
-      <img src="assets/images/MLX.jpg" class="auth-image" alt="aboutMe">
+      <img src="assets/images/ML.png" class="aboutImg" alt="aboutMe">
       <p>I am a Full-Stack Developer with a training in data analysis. I hold a Master’s Degree in Computer Science from New York University Tandon School of Engineering. I use HTML, CSS, JavaScript JavaScript, jQuery and Node.js to create practical, functional, and beautiful websites. Problem-solving  is one of my strengths. Details matter to me very much.
         I am a team player and I communicate effectively with both, technical and business team members. I take pride in developing projects and enjoy the final product.
       </p>
-       
+      
+    </div>
+    <!------------------------------------------------------------------->
+    <div id ='stop'>
+      <a id="portfolio"></a>
+      <p></p>
+    </div>
+
+    <div class="main-section-portfolio">
         
-      </section>
-    <!------------------------------------------------------------------->
-    <a name="portf"></a>
-    <section class="main-section-portfolio">
-       
         <h1>Portfolio</h1>
+       
+        <div class="work">
+          <!--Project 1-->
+          <a href="https://bgosse1.github.io/project1" target="_blank"><img src="assets/images/treasureHunt.png" alt="Treasure Hunt"></a>
+          <a href="https://github.com/Bgosse1/project1" target="_blank"><h3>Treasure Hunt <img src="assets/images/git2.png" id='navPic'></h3></a>
+        </div>
 
         <div class="work">
-          <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
-  
-          <h3>Word Guess</h3>
-        </div>
+          <!--Train Scheduler-->
+            <a href="https://urani100.github.io/trainScheduler" target="_blank"><img src="assets/images/trainScheduler.png" alt="Train Scheduler"></a>
+            <a href="https://github.com/urani100/trainScheduler" target="_blank"><h3>Train Scheduler <img src="assets/images/git2.png" id='navPic'></h3></a>
+          </div> 
+        
         <div class="work">
-          <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-  
-          <h3>RPG Game</h3>
-        </div>
+           <!--Trivia Game-->
+          <a href="https://urani100.github.io/TriviaGame" target="_blank"><img src="assets/images/triviaGame.png" alt="Trivia Game"></a>
+          <a href="https://github.com/urani100/TriviaGame" target="_blank"><h3>Trivia Game <img src="assets/images/git2.png" id='navPic'></h3></a>
+        </div>  
+
         <div class="work">
-          <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-  
-          <h3>Trivia Game</h3>
-        </div>
+            <!--Unit -4 Game -->
+           <a href="https://urani100.github.io/unit-4-game" target="_blank"><img src="assets/images/luckyCharm.png" alt="Trivia Game"></a>
+           <a href="https://github.com/urani100/unit-4-game" target="_blank"><h3>Lucky Charm Collector <img src="assets/images/git2.png" id='navPic'></h3></a>
+         </div>  
+
         <div class="work">
-          <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Info Widget">
-  
-          <h3>Info Widget</h3>
-        </div>
-    </section>
-    
+          <!--Word Guessing  Game-->
+            <a href="https://urani100.github.io/WordGuessGame" target="_blank"><img src="assets/images/guessingGame.png" alt="Guessing Game"></a>
+            <a href="https://github.com/urani100/WordGuessGame" target="_blank"><h3>Word Guessing Game <img src="assets/images/git2.png" id='navPic'></h3></a>
+          </div>
+    </div >
 
     <!------------------------------------------------------------------->
-    <!-- <a name="contact"></a>
-    <section class="main-section-contact">
-         <p>Stay in Touch: Phone: 347.622.1720 | email: marsha.d.leconte@gmail.com</p>
-    </section> -->
-
+    
+    <div class="main-section-contact">
+      <h1>Stay In Touch</h1>
+      <br>
+       <p>Phone: 347-555-1212</p>
+       <p>Email: mleconte@gmail.com</p>
+         <br>
+    </div > 
   </main>
  
 </div>
 
-  <!-- <footer>
-    <div class="container">
-      &copy; Copyright
-    </div>
-  </footer> -->
-
-
-  <!------------------------------------->
-  <script>
-    // Select all links with hashes
-      $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function(event) {
-          // On-page links
-          if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-            && 
-            location.hostname == this.hostname
-          ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
-            if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
-              $('html, body').animate({
-                scrollTop: target.offset().top
-              }, 1000, function() {
-                // Callback after animation
-                // Must change focus!
-                var $target = $(target);
-                $target.focus();
-                if ($target.is(":focus")) { // Checking if the target was focused
-                  return false;
-                } else {
-                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                  $target.focus(); // Set focus again
-                };
-              });
-            }
-          }
-        });
-        
-  
-  </script>
+<div id ='stop'>
+  <a id="contact"></a>
+</div>
 </body>
 </html>
