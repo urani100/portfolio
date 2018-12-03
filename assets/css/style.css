@@ -149,13 +149,17 @@ main {
   max-width: 950px;
   height:auto;  
   padding: 30px;
-  margin-top: 105px; 
+  margin-top: 170px; 
   margin-bottom: 200px;
   background: #fff;
   text-align:justify;
   font-size: 16px;
   opacity: 0.92;
 }
+
+/* .main-section-portfolio{
+  margin-top: 160px;
+} */
 
 /* about me section */
 .aboutImg{
