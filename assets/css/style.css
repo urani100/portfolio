@@ -161,7 +161,7 @@ main {
 /* about me section */
 .aboutImg{
   float: left;
-  width: 210px;
+  width: 200px;
   height: 250px;
   margin-top: 10px;
   margin-right: 25px;
@@ -183,7 +183,7 @@ main {
 }
 
 .work img {
-  width: 100%;
+  width: 100%; 
   border: 0 none;
   opacity: 0.8; 
 }
