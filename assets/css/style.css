@@ -173,7 +173,7 @@ main {
   float: left; 
   width: 300px;
   margin-bottom:15px; 
-  overflow: auto;
+  /* overflow: auto; */
   border: 1px solid #53900F;
   border-radius: 0.5%
 }
@@ -183,7 +183,9 @@ main {
 }
 
 .work img {
-  width: 100%; 
+  /* width: 100%;  */
+  width:298px;
+  height:150px;
   border: 0 none;
   opacity: 0.8; 
 }
@@ -286,7 +288,7 @@ main {
   }
 
   nav {
-    position: static; /*Added ML*/
+    position: static; 
     width: 100%;
     margin: 15px 0;
     text-align: center;
