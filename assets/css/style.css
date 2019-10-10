@@ -85,8 +85,8 @@ h4 {
 
 /* header */
 #master { 
-  /* background: url("../images/logo.png");  */
-  background-image: url("../../assets/images/logo.jpg");
+  background: url("../images/logo.png"); 
+  /* background-image: url("../../assets/images/logo.jpg"); */
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -106,7 +106,7 @@ h4 {
 
 /* removed text associated to logo id */
 #logo{
-  color:#fff;
+  color:black;
   text-align: center;
   text-decoration: none;
   margin-right: 200px;
@@ -125,11 +125,11 @@ h4 {
   font-size: 90px;
 }
 #sublogo{
-  text-align: left;
-  color:#fff;
-  font-size: 30px;
+  text-align: center;
+  color:black;
+  font-size: 29px;
   font-family: 'Tangerine', serif; 
-  letter-spacing: 10px;
+  
 }
 
 
