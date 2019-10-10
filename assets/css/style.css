@@ -60,14 +60,16 @@ h3 {
   /* font-family: 'Playfair Display', serif; */
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  color:#4169e1;
+  /* color:#4169e1; */
+  color: black;
 }
 
 h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
-  border-bottom: 3px solid #4169e1;
+  /* border-bottom: 3px solid #4169e1; */
+  border-bottom: 3px solid black
   /* text-shadow: 4px 4px 4px #aaa; */
 }
 
@@ -93,7 +95,9 @@ h4 {
   margin: 0 0 20px;
   overflow: auto;
   background-repeat: no-repeat;
-  color: #4169e1;
+  /* color: #4169e1; */
+  color: black;
+  
   /* background: #fff; */ 
 }
 
@@ -167,7 +171,8 @@ nav li {
   margin-left: 5px;
   margin-top: 40px;
   line-height: 10px;
-  color: #4169e1;
+  /* color: #4169e1; */
+  color:black
 }
 
 nav a {
@@ -177,7 +182,8 @@ nav a {
   /* color: #4169e1; */
   color:#fff;
   text-decoration: none;
-  color: #4169e1;
+  /* color: #4169e1; */
+  color:black
 }
 
 nav li:first-child {
@@ -225,7 +231,8 @@ main {
   width: 300px;
   margin-bottom:15px; 
   /* overflow: auto; */
-  border: 1px solid #4169e1;
+  /* border: 1px solid #4169e1; */
+  border: 1px solid black;
   border-radius: 0.5%
 }
 
@@ -249,7 +256,8 @@ main {
   margin-bottom: 10px;
   font-weight: 300;
   line-height: 30px;
-  color:  #4169e1;
+  /* color:  #4169e1; */
+  color:black;
   font-weight: bold;
   text-align: center;
   background: white;
