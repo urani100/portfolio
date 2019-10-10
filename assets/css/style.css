@@ -86,7 +86,7 @@ h4 {
 /* header */
 #master { 
   background: url("../images/logo.png"); 
-  /* background-image: url("../../assets/images/logo.jpg"); */
+  background-image: url("../../assets/images/logo.jpg"); 
   position: fixed;
   z-index: 99;
   width: 100%;
