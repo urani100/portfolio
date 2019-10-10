@@ -92,9 +92,10 @@ h4 {
   /* background-image: url("../../assets/images/logo.jpg");  */
   position: fixed;
   z-index: 90;
-  width: 100%;
+  width: 80%;
   padding: 0px;
-  margin: 0 0 0px;
+  /* margin: 0 0 0px; */
+  margin: 200 0 200 0px;
   overflow: auto;
   height: 30%;
   background-repeat: no-repeat;
@@ -149,6 +150,7 @@ nav {
   width: 30%;
   margin-right: 70px; 
   /* border: solid orangered; */
+  text-align: right;
 }
 
 nav li {
